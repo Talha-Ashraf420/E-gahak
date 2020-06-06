@@ -1,0 +1,37 @@
+<div  class="text-center" *ngIf="user$ | async as User">
+    <strong >Signed in as:<a>{{ User.email }}</a></strong>
+  </div>
+<hr>
+<section class="footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Useful Links</h1>
+                <p>Privacy Policy</p>
+                <p>Term of Use</p>
+                <p>Return Policy</p>
+                <p>Discounts</p>
+            </div>
+            <div class="col-md-3">
+                <h1>About Us</h1>
+                <p>Company</p>
+                <p>Contact Us</p>
+                <p>Register</p>
+                 <p>Home</p>
+            </div>
+            <div class="col-md-3">
+                    <h1>Follow Us</h1>
+                    <p><i class="fab fa-facebook"></i> Facebook</p>
+                    <p><i class="fab fa-twitter"></i> Twitter</p>
+                    <p><i class="fab fa-instagram"></i> Instagram</p>
+                     <p><i class="fab fa-snapchat"></i> Snapchat</p>
+                </div>
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <img src="../../../../assets/app.png"> 
+                </div>
+        </div>
+        <hr>
+        <p class="copyright">Develped by Aridians <i class="fa fa-heart"></i></p>
+    </div>
+</section>

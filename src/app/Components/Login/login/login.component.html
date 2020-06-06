@@ -1,0 +1,34 @@
+    <div class="wrapper fadeInDown " style="margin-top:2%">
+            <div id="formContent" class="p-5">
+              <!-- Tabs Titles -->
+              <!-- Icon -->
+              <div class="fadeIn first">
+                    <i class="fas fa-sign-in-alt"></i>
+              </div>
+              <!-- Login Form -->
+              <form [formGroup]="angForm" novalidate>
+                <div class="form-group">
+                  <input [(ngModel)]="email" type="text" class="form-control"  formControlName="Email" id="login" class="fadeIn second" name="login" placeholder="Email">
+                </div>
+                  <div *ngIf="angForm.controls['Email'].invalid && (angForm.controls['Email'].dirty || angForm.controls['Email'].touched)" >
+                            <div *ngIf="angForm.controls['Email'].errors.required" style="color: red;">
+                            Name is required
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input [(ngModel)]="password" type="password" class="form-control"  formControlName="Password" id="login" class="fadeIn second" name="login" placeholder="Password">
+                        </div>
+                          <div *ngIf="angForm.controls['Password'].invalid && (angForm.controls['Password'].dirty || angForm.controls['Password'].touched)" >
+                                    <div *ngIf="angForm.controls['Password'].errors.required" style="color: red;">
+                                      Password is required
+                                  </div>
+                                </div>
+                <input type="submit" (click)="login()" class="fadeIn fourth" value="Log In">
+              </form>
+              <div id="formFooter">
+                <a class="underlineHover" [routerLink]="['register']">Create Account</a>
+              </div>
+          
+            </div>
+          </div>
+          <app-footer></app-footer>

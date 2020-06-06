@@ -1,0 +1,26 @@
+<div style="margin-top: 10%;">
+    <h1 class="text-center">Admin Orders</h1>
+    <table class=" border table" style="width: 70%; margin-left: 15%;">
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Date</th>
+          <th>Shipping Address</th>
+          <th>City</th>
+          <th>Actions</th>
+        </tr>
+      </thead> 
+      <tbody>
+        <tr *ngFor="let order of orders$|async ">
+            <td>{{order.data.shipping.name}}</td>
+            <td>{{order.data.datePlaced|date}}</td>
+            <td>{{order.data.shipping.addressLine1}}</td>
+            <td>{{order.data.shipping.city}}</td>
+            <td >
+                <i [routerLink]="['/admin-order-details/',order.key]" style="  cursor: pointer;font-size: 25px; color: #3e1e59;" class="fas fa-eye"></i> 
+            </td>
+           </tr>
+      </tbody> 
+    </table>    
+</div>
+<app-footer></app-footer>

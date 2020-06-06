@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "Egahak",
+      "public": "dist/Egahak",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

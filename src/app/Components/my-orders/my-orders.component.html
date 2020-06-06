@@ -1,0 +1,21 @@
+<div style="margin-top: 10%;">
+    <h1 class="text-center ">My Orders</h1>
+   <table style="width: 70%; margin-left: 15%;" class="border table">
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Shipping City</th>
+          <th>Shipping Address</th>
+          <th></th>
+        </tr>
+      </thead> 
+      <tbody>
+        <tr *ngFor="let order of orders$|async ">
+         <td>{{order.data.shipping.name}}</td>
+         <td>{{order.data.shipping.city}}</td>
+         <td>{{order.data.shipping.addressLine1}}</td>
+         <td ><a [routerLink]="['/my-orders-details/',order.key]">View</a></td>
+        </tr>
+      </tbody> 
+    </table>
+</div>

@@ -1,0 +1,66 @@
+    <div class="wrapper fadeInDown " style="margin-top:5%">
+            <div id="formContent" class="p-5">
+              <div class="fadeIn first">
+                    <i class="fas fa-user-plus"></i>
+              </div>
+            
+              <form [formGroup]="angForm" novalidate>
+            <div class="form-group">
+              <input [(ngModel)]="email" type="text" class="form-control"  formControlName="Email" id="login" class="fadeIn second" name="login" placeholder="Email">
+            </div>
+              <div *ngIf="angForm.controls['Email'].invalid && (angForm.controls['Email'].dirty || angForm.controls['Email'].touched)" >
+                        <div *ngIf="angForm.controls['Email'].errors.required" style="color: red;">
+                        Name is required
+                      </div>
+                    </div>
+              <div class="form-group"> 
+                <input [(ngModel)]="username" class="form-control" type="text" formControlName="Username"  id="Username" class="fadeIn third" name="login" placeholder="Username">
+              </div>
+                <div *ngIf="angForm.controls['Username'].invalid && (angForm.controls['Username'].dirty || angForm.controls['Username'].touched)">
+                        <div *ngIf="angForm.controls['Username'].errors.required" style="color: red;">
+                       Username required
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input [(ngModel)]="nationality" class="form-control" type="text" formControlName="Nationality"  id="Nationality" class="fadeIn third" name="Nationality" placeholder="Nationality">
+                    </div>
+                    <div *ngIf="angForm.controls['Nationality'].invalid && (angForm.controls['Nationality'].dirty || angForm.controls['Nationality'].touched)">
+                            <div *ngIf="angForm.controls['Nationality'].errors.required" style="color: red;">
+                            Nationality required
+                          </div>
+                        </div>
+                        <diV class="form-group">
+                        <input [(ngModel)]="phone" class="form-control" type="text" formControlName="Phone"  id="Phone" class="fadeIn third" name="Phone" placeholder="Phone">
+                      </diV>
+                        <div *ngIf="angForm.controls['Phone'].invalid && (angForm.controls['Phone'].dirty || angForm.controls['Phone'].touched)">
+                                <div *ngIf="angForm.controls['Phone'].errors.required" style="color: red;">
+                                Phone no required
+                              </div>
+                            </div>
+                            <div class="form-group">
+                            <input [(ngModel)]="password" class="form-control" type="password" formControlName="Password"  id="password" class="fadeIn third" name="login" placeholder="Password">
+                          </div>
+                            <div *ngIf="angForm.controls['Password'].invalid && (angForm.controls['Password'].dirty || angForm.controls['Password'].touched)">
+                                    <div *ngIf="angForm.controls['Password'].errors.required" style="color: red;">
+                                    Password required
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                <input [(ngModel)]="cpassword" class="form-control" type="password" formControlName="CPassword"  id="Cpassword" class="fadeIn third" name="login" placeholder="ConfirmPassword">
+                              </div>
+                                <div *ngIf="angForm.controls['CPassword'].invalid && (angForm.controls['CPassword'].dirty || angForm.controls['CPassword'].touched)">
+                                 <div *ngIf="angForm.controls['CPassword'].errors.required" style="color: red;">
+                                       Confirm Password required
+                                      </div>
+                                    </div>
+                <input type="submit" (click)="signup()" class="fadeIn fourth" value="Sign Up">
+              </form>
+          
+        
+              <div id="formFooter">
+                <a class="underlineHover" [routerLink]="['register']">Login</a>
+              </div>
+          
+            </div>
+          </div>
+          <app-footer></app-footer>

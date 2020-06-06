@@ -1,0 +1,10 @@
+{   "gcm_sender_id": "256559506462",
+    "name": "E-Gahak",
+    "short_name": "FYP",
+    "icons": [{
+    "src": "./assets/E-Gahak.png",
+    "sizes": "800x800",
+    "type": "image/png"
+    }
+]
+    }

@@ -1,0 +1,66 @@
+table th {
+    text-align: center; 
+ }
+ table td {
+    text-align: center; 
+ }
+                    
+ .table {
+    margin: auto;
+    width: 50% !important; 
+ }
+
+ .search {
+   width: 50% !important; 
+   text-align: center; 
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    border: 0;
+  background-color: #3e1e59 !important;
+}
+
+.btn-primary:hover {
+  background-color: coral !important;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+.btn-danger,
+.btn-danger:active,
+.btn-danger:visited {
+    border: 0;
+  background-color: coral !important;
+}
+
+.btn-danger:hover {
+  background-color: #3e1e59 !important;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+.btn-circle.btn-xl {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 20;
+  height: 20px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}

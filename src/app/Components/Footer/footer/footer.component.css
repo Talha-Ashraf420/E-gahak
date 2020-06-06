@@ -1,0 +1,28 @@
+.footer{
+    margin-top:50px ;
+}
+.footer h1{
+    font-size: 15px;
+    margin: 25px 0px;
+}
+.footer p{
+    font-size: 12px;
+}
+.copyright{
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom:20px ;
+}
+.fa-heart{
+    color: coral;
+    font-size: 15px;
+}
+.footer-image img{
+    width: 50%;
+}
+.footer .row .fa
+{
+    padding-right: 20px;
+    font-size: 15px;
+}
